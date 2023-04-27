@@ -6,3 +6,5 @@ https://www.youtube.com/@junfucheng2172/videos
 
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/X1LVDeW8v2g/0.jpg)](https://www.youtube.com/watch?v=X1LVDeW8v2g "Cobot Chess Player")
+
+2022-2023 Cobot Team Member: https://cobot.herokuapp.com/#home
