@@ -1,0 +1,18 @@
+gripper_controller:
+  controllers:
+    state:
+      type: joint_state_controller/JointStateController
+      publish_rate: 50
+    position:
+      type: position_controllers/JointTrajectoryController
+      joints:
+        - ar3_finger_joint1
+        - ar3_finger_joint2
+      constraints:
+        goal_time: 0.5
+        ar3_finger_joint1:
+          trajectory: 0.5
+          goal: 0.02
+        ar3_finger_joint2:
+          trajectory: 0.5
+          goal: 0.02
