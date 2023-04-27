@@ -122,6 +122,24 @@ std::string box::evaluate()
     temp = coordinate2uciStep(change[2][0], change[2][1]);
     result = result + temp;
   }
+  
+  //castling
+  if(count >= 4 && change_content[0] == become_occupied && coordinate2uciStep(change[0][0], change[0][1]) ==  "g8"&& change_content[1] == become_empty && coordinate2uciStep(change[1][0], change[1][1]) ==  "h8" && change_content[2] == become_occupied && coordinate2uciStep(change[2][0], change[2][1]) ==  "f8")
+  {
+  	result = "e8g8";
+  }
+  else if(count >= 4 && change_content[0] == become_occupied && coordinate2uciStep(change[0][0], change[0][1]) ==  "c8"&& change_content[1] == become_empty && coordinate2uciStep(change[1][0], change[1][1]) ==  "a8" && change_content[2] == become_occupied && coordinate2uciStep(change[2][0], change[2][1]) ==  "d8")
+  {
+  	result = "e8c8";
+  }
+  else if(count >= 4 && change_content[0] == become_occupied && coordinate2uciStep(change[0][0], change[0][1]) ==  "g1"&& change_content[1] == become_empty && coordinate2uciStep(change[1][0], change[1][1]) ==  "h1" && change_content[2] == become_occupied && coordinate2uciStep(change[2][0], change[2][1]) ==  "f1")
+  {
+  	result = "e1g1";
+  }
+  else if(count >= 4 && change_content[0] == become_occupied && coordinate2uciStep(change[0][0], change[0][1]) ==  "c1"&& change_content[1] == become_empty && coordinate2uciStep(change[1][0], change[1][1]) ==  "a1" && change_content[2] == become_occupied && coordinate2uciStep(change[2][0], change[2][1]) ==  "d1")
+  {
+  	result = "e1c1";
+  }
   else
   {
   	/*
