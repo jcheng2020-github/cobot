@@ -1,1 +1,1 @@
-chess_player package includes `chess_move_monitor`, `fake_chess_monitor`, and `chess_player_implementation` nodes. `serial_node` node in `rosserial_python` for the communication with Arduino Mega 2560 is required.
+The workspace includes the sensor chessboard microcontroller scripts and chess_player packges for chess palyer function of the Cobot.
