@@ -1,0 +1,18 @@
+<package format="3">
+  <name>gripper_hardware_drivers</name>
+  <version>0.0.0</version>
+  <description>The gripper_hardware_drivers package</description>
+
+  <maintainer email="jcheng2020@my.fit.edu">Junfu Cheng</maintainer>
+
+  <license>MIT</license>
+
+  <author email="jcheng2020@my.fit.edu">Junfu Cheng</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  
+</package>
