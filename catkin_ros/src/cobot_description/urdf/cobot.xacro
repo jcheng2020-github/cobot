@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="cobot">
+  <xacro:include filename="$(find cobot_description)/urdf/ar3.xacro"/>
+  <xacro:include filename="$(find cobot_description)/urdf/gripper.xacro"/>
+  <!--xacro:cobot /-->
+  <xacro:gripper ns="ar3" rpy="0 0 ${-pi/2}" xyz='0 0 0.023'  connected_to="link_6"/>
+</robot>
