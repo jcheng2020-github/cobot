@@ -1,0 +1,6 @@
+gripper_controller:
+    hardware_interface:
+        loop_hz: 10 # hz
+        joints:
+            - ar3_finger_joint1
+            - ar3_finger_joint2

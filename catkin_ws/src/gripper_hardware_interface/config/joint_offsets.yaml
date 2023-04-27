@@ -1,0 +1,5 @@
+gripper_controller:
+    hardware_interface:
+        joint_offsets: # degrees
+            ar3_finger_joint1: 0.0 # default 0
+            ar3_finger_joint2: 0.0 # default 0
