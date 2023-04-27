@@ -1,0 +1,4 @@
+<launch>
+	<node pkg="cobot_tf" type="object_tf_broadcaster" name="object_tf_broadcaster" args="kinect2_link 0 0 0 1.5707963 3.1415926 1.5707963 world 0 0.2 0 0 0 0" output="screen"/>
+	<!-- <node pkg="cobot_tf" type="object_tf_listener" name="object_tf_listener" output="screen"/> -->
+</launch>
