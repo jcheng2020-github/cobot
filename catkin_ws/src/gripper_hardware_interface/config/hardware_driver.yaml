@@ -1,7 +1,0 @@
-gripper_controller:
-    hardware_driver:
-        serial_port: "/dev/ttyACM1" # /dev/ttyACM1
-        baudrate: 115200
-        encoder_steps_per_deg: # encoder steps per joint angle degree
-            ar3_finger_joint1: 1 # default 1
-            ar3_finger_joint2: 1 # default 1
