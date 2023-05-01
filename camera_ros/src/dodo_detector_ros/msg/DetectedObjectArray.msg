@@ -1,2 +1,0 @@
-Header header
-dodo_detector_ros/DetectedObject[] detected_objects
