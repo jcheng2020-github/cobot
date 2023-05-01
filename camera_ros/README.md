@@ -1,1 +1,1 @@
-The workspace for computer vision related function for cobot
+The workspace for computer vision related functions for Cobot
