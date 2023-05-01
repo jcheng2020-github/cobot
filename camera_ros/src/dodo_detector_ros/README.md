@@ -1,4 +1,4 @@
-Origin Auther's page: https://github.com/douglasrizzo/dodo_detector_ros
+Origin Author's page: https://github.com/douglasrizzo/dodo_detector_ros
 # Object detection from images/point cloud using ROS
 
 This ROS package creates an interface with [dodo detector](https://github.com/douglasrizzo/dodo_detector), a Python package that detects objects from images.
