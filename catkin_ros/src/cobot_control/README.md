@@ -4,6 +4,14 @@ This package contains code for motion planning with the MoveIt C++ API including
 
 * **chess_player**  
   `move_group_demo.cpp` (belonging to chess_player_action preparation series) listens to topic '/instruction_from_chessEngine` to get instruction from the chess engine.
+  To activate it, run
+  ```
+  roslaunch cobot_control move_group_demo.launch
+  ```
 
 * **object retrieval with the computer vision function**  
-  To activate `move_group_demo(Object retrieval).cpp`, rename it to `move_group_demo.cpp` and rename origin `move_group_demo.cpp' or add this new node to CMake and launch files instructions and then compile it is required. 
+  `move_group_demo(Object retrieval).cpp` listens to topic `/tf` to get the target position detected by computer vision programs.
+  To activate it, run
+  ```
+  roslaunch cobot_control move_group_demo_Object_retrieval.launch
+  ```
