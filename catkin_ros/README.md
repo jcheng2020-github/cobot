@@ -21,8 +21,8 @@ at each terminal
 roslaunch ar3_hardware_interface ar3_hardware_bringup.launch
 ```
 on the first terminal<br />
-If the terminal shows that **Failed to connect to serial port /dev/ttyACM0**, it means that the USB port connected to Teensy 4.1 is not connected well.<br /> 
-When the terminal shows **Running joint calibration…**, the 6 joints of the AR3 arm should begin their rotation one by one to finish their calibration.<br />
+If the terminal shows that **"Failed to connect to serial port /dev/ttyACM0"**, it means that the USB port connected to Teensy 4.1 is not connected well.<br /> 
+When the terminal shows **"Running joint calibration…"**, the 6 joints of the AR3 arm should begin their rotation one by one to finish their calibration.<br />
 If the arm has already been calibrated following ar3_hardware_interface commands before, users can choose to run “roslaunch ar3_hardware_interface ar3_hardware_bringup.launch use_existing_calibrations:=true” instead.<br />
 If any anomaly happens during the calibration procedure, input ctrl C on the ar3_hardware_interface terminal, then burn the `baseline_with_ARCS_jcheng2020_revised_asyn_IO_com_version` Arduino script into Teensy 4.1 again or reset the Teensy. Next, run
 ```
@@ -34,7 +34,7 @@ in ar3_hardware_interface terminal.<br />
 roslaunch gripper_hardware_interface gripper_hardware_bringup.launch
 ```
 on the second terminal for gripper_hardware_interface.<br />
-If gripper_hardware_interface terminal shows **Failed to start controllers: /gripper_controller/controllers/state, /gripper_controller**, input ctrl C on the gripper_hardware_interface terminal and run “roslaunch gripper_hardware_interface gripper_hardware_bringup.launch” again.<br />
+If gripper_hardware_interface terminal shows **"Failed to start controllers: /gripper_controller/controllers/state, /gripper_controller"**, input ctrl C on the gripper_hardware_interface terminal and run “roslaunch gripper_hardware_interface gripper_hardware_bringup.launch” again.<br />
 Run 
 ```
 roslaunch cobot_moveit_config cobot_moveit_bringup.launch
