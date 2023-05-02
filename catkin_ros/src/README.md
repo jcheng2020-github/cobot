@@ -34,7 +34,7 @@ The `/ar3_controller/controllers/state` and `/gripper_controller/controllers/sta
 WARN: if response time from hardware is too long, then, MoveIt trajectory control will have error of the control target such as submit a commend which is out of range of joints motion.
 
 
-""MoveIt ERROR:
+## MoveIt ERROR:
 The plugin for class ‘moveit_rviz_plugin/MotionPlanning” failed to load.
 Solution:
 sudo apt update
