@@ -1,3 +1,3 @@
 The packages for hardware interfaces, hardware drivers, control, robot model description, microcontroller scripts, moveit configure files, and deviation correction plugin.
-# About ar3_hardware_interface, ar3_hardware_driver, gripper_hardware_interface and gripper_hardware_driver
+## About ar3_hardware_interface, ar3_hardware_driver, gripper_hardware_interface and gripper_hardware_driver
 We use Robotic Operate System (ROS Noetic Ninjemys), an open-source robotics middleware suite, for robot software development. A set of packages that include controller interfaces, controller managers, transmissions, and hardware interfaces called ros_control are applied. The ros_control packages take as input the joint state data from the robot's actuator's encoders and an input set point. It uses a generic control loop feedback mechanism, a PID controller, to control the joint position outputs.
