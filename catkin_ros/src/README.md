@@ -10,20 +10,13 @@ Topic `/ar3_controller/state` and `/gripper_controller/state` all track cobot st
 `/ar3_controller/follow_joint_trajectory/cancel`<br />
 `/ar3_controller/follow_joint_trajectory/feedback`<br />
 `/ar3_controller/follow_joint_trajectory/goal`<br />
-`/ar3_controller/follow_joint_trajectory/result`
-
-`/ar3_controller/follow_joint_trajectory/status`
-
-`/gripper_controller/follow_joint_trajectory/cancel`
-
-`/gripper_controller/follow_joint_trajectory/feedback`
-
-`/gripper_controller/follow_joint_trajectory/goal`
-
-`/gripper_controller/follow_joint_trajectory/result`
-
-`/gripper_controller/follow_joint_trajectory/status`)
-
+`/ar3_controller/follow_joint_trajectory/result`<br />
+`/ar3_controller/follow_joint_trajectory/status`<br />
+`/gripper_controller/follow_joint_trajectory/cancel`<br />
+`/gripper_controller/follow_joint_trajectory/feedback`<br />
+`/gripper_controller/follow_joint_trajectory/goal`<br />
+`/gripper_controller/follow_joint_trajectory/result`<br />
+`/gripper_controller/follow_joint_trajectory/status`)<br />
 The `/ar3_controller/controllers/state` and `/gripper_controller/controllers/state` are all assigned to the `controller_spawner` node in order to add cobot state tracking information to `/joint_states` topic and make sure `/joint_states` includes joints data from both ar3 and gripper. Hence, `/ar3_controller/state`, `/gripper_controller/state` and `/joint_states` all include cobot pose tracking information. And `/joint_states` has two publisher nodes: `/gripper_hardware_interface` and `/ar3_hardware_interface`. The subscriber node `move_group` only listens to `/joint_states`.
 WARN: if response time from hardware is too long, then, MoveIt trajectory control will have error of the control target such as submit a commend which is out of range of joints motion.
 
