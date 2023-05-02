@@ -2,7 +2,7 @@
 <package>
   <name>cobot_control</name>
   <version>0.1.0</version>
-  <description>cobot control demo with the Move Group interface</description>
+  <description>This package contains code for motion planning with the MoveIt C++ API including samples code, programs for chess_player and object retrieval with the computer vision function.</description>
   <license>BSD</license>
 
   <author email="jcheng2020@my.fit.edu">Junfu Cheng</author>
