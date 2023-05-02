@@ -10,7 +10,7 @@ This package contains code for motion planning with the MoveIt C++ API including
   ```
 
 * **object retrieval with the computer vision function**  
-  `move_group_demo(Object retrieval).cpp` listens to topic `/tf` to get the target position detected by computer vision programs.
+  `move_group_demo_Object_retrieval.cpp` listens to topic `/tf` to get the target position detected by computer vision programs.
   To activate it, run
   ```
   roslaunch cobot_control move_group_demo_Object_retrieval.launch
