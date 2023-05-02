@@ -47,8 +47,14 @@ catkin_package(
 
 include_directories(${catkin_INCLUDE_DIRS} ${Boost_INCLUDE_DIR} ${EIGEN3_INCLUDE_DIRS})
 
+add_executable(move_group_demo_Object_retrieval src/move_group_demo_Object_retrieval.cpp)
 add_executable(move_group_demo src/move_group_demo.cpp)
+target_link_libraries(move_group_demo_Object_retrieval ${catkin_LIBRARIES} ${Boost_LIBRARIES})
 target_link_libraries(move_group_demo ${catkin_LIBRARIES} ${Boost_LIBRARIES})
+install(TARGETS move_group_demo_Object_retrieval DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 install(TARGETS move_group_demo DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+
+
+
 
 install(DIRECTORY launch DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
