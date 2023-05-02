@@ -1,5 +1,5 @@
 # cobot_control
-This package contains code for motion planning with the MoveIt C++ API including samples code, programs for chess_player and object retrieval with the computer vision function.
+cobot_control package contains code for motion planning with the MoveIt C++ API including samples code, programs for chess_player and object retrieval with the computer vision function.
 
 
 * **chess_player**  
