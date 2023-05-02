@@ -44,5 +44,5 @@ on the third terminal for MoveIt. Then, the following GUI will be displayed:
 
 * Click `“Fixed Frame”` of `“Global Option”` of `“Display”` and select `“world”` as the fixed frame.
 * Click the `“Add”` button at the left column and a new dialog box will appear as shown below:
-
+![](MoveIt%202023-05-02%2011-16-27.png)
 
