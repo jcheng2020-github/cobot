@@ -6,6 +6,11 @@ The ar3 and gripper hardware Interfaces are used by ros_ control in conjunction 
 ![](ros_control.png)
 
 (Credit: http://wiki.ros.org/ros_control)
+| Sent to Teensy 4.1  | Response from Teensy 4.1 |
+| ------------- | ------------- |
+| MT: update latest position commands  | JP: update encoder steps  |
+| JP: get joint position  | JP: update encoder steps  |
+| JC: calibrate joints  | JC: update encoder calibration data  |
 
 
 ## MoveIt and Rviz
