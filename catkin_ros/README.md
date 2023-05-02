@@ -45,4 +45,21 @@ on the third terminal for MoveIt. Then, the following GUI will be displayed:
 * Click `“Fixed Frame”` of `“Global Option”` of `“Display”` and select `“world”` as the fixed frame.
 * Click the `“Add”` button at the left column and a new dialog box will appear as shown below:
 ![](MoveIt%202023-05-02%2011-16-27.png)
-
+* Double click “MotionPlanning” of “moveit_ros_visualization” of “By display type”. Then the MoveIt window will show as follows:
+![](MoveIt%202023-05-02%2011-18-34.png)<br />
+“MotionPlanning” column provides all GUI required for command submission to the arm. Selecting the “gripper” in the “Planning Group” of “Query” is required to control the end-effector.
+* In the fourth terminal for deviation correction of the steps tracking of each joint of ar3 move group, run
+```
+rosrun deviation_correct deviation_publisher
+```
+and follows the instructions in https://github.com/jcheng2020-github/cobot/tree/main/catkin_ros/src/deviation_correct
+The "chess_ready" pose of Cobot is as shown below:
+![](MoveIt%202023-05-02%2011-30-28.png)
+*  Choose a launch option in `cobot_control' in the fifth terminal:
+```
+roslaunch cobot_control move_group_demo.launch
+```
+or
+```
+roslaunch cobot_control move_group_demo_Object_retrieval.launch
+```
