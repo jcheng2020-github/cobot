@@ -35,10 +35,10 @@ WARN: if response time from hardware is too long, then, MoveIt trajectory contro
 
 
 ## MoveIt ERROR:
-The plugin for class ‘moveit_rviz_plugin/MotionPlanning” failed to load.
-Solution:
-sudo apt update
-sudo apt upgrade
-sudo apt install ros-noetic-moveit-simple-controller-manager
-sudo apt update
+The plugin for class ‘moveit_rviz_plugin/MotionPlanning” failed to load.<br />
+Solution:<br />
+sudo apt update<br />
+sudo apt upgrade<br />
+sudo apt install ros-noetic-moveit-simple-controller-manager<br />
+sudo apt update<br />
 sudo apt upgrade
