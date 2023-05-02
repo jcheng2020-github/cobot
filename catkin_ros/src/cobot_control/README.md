@@ -1,9 +1,9 @@
 # cobot_control
-This module contains sample code for motion planning with the MoveIt API. There is currently a demo for the move group interface which has been adapted for the AR3 from the tutorials. There is much more to the MoveIt API, do check out the [official MoveIt tutorials](https://ros-planning.github.io/moveit_tutorials/index.html).
+This package contains code for motion planning with the MoveIt C++ API including samples code, programs for chess_player and object retrieval with the computer vision function.
 
 
-* **rviz_tools_gui**  
-  You will need to add the rviz_tools_gui to step through the demo. You can do so with `Panels -> Add New Panel -> RvizVisualToolsGui`.
+* **chess_player**  
+  `move_group_demo.cpp` (belonging to chess_player_action preparation series) listens to topic '/instruction_from_chessEngine` to get instruction from the chess engine.
 
-* **Marker Array**  
-  `Add -> By display type -> MarkerArray` to view the poses and trajectories.
+* **object retrieval with the computer vision function**  
+  To activate `move_group_demo(Object retrieval).cpp`, rename it to `move_group_demo.cpp` and rename origin `move_group_demo.cpp' or add this new node to CMake and launch files instructions and then compile it is required. 
