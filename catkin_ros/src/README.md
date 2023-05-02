@@ -6,14 +6,10 @@ The ar3 and gripper hardware Interfaces are used by ros_ control in conjunction 
 ![](ros_control.png)
 
 (Credit: http://wiki.ros.org/ros_control)
-Topic `/ar3_controller/state` and `/gripper_controller/state` all track cobot state in their corresponding joints. `ar3_hardware_interface` and `gripper_hardware_interface` publish these topic separately. As long as `/ar3_controller` and `/gripper_controller` are assigned to `controller_spawner` node separately in their launch files. It is required for controller name to match the topic name requirements given by MoveIt package ( especially, a series of `/follow_joint_trajectory` topic such as:
-
-`/ar3_controller/follow_joint_trajectory/cancel`
-
-`/ar3_controller/follow_joint_trajectory/feedback`
-
-`/ar3_controller/follow_joint_trajectory/goal`
-
+Topic `/ar3_controller/state` and `/gripper_controller/state` all track cobot state in their corresponding joints. `ar3_hardware_interface` and `gripper_hardware_interface` publish these topic separately. As long as `/ar3_controller` and `/gripper_controller` are assigned to `controller_spawner` node separately in their launch files. It is required for controller name to match the topic name requirements given by MoveIt package ( especially, a series of `/follow_joint_trajectory` topic such as:<br />
+`/ar3_controller/follow_joint_trajectory/cancel`<br />
+`/ar3_controller/follow_joint_trajectory/feedback`<br />
+`/ar3_controller/follow_joint_trajectory/goal`<br />
 `/ar3_controller/follow_joint_trajectory/result`
 
 `/ar3_controller/follow_joint_trajectory/status`
