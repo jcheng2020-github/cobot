@@ -6,6 +6,8 @@ The ar3 and gripper hardware Interfaces are used by ros_ control in conjunction 
 ![](ros_control.png)
 
 (Credit: http://wiki.ros.org/ros_control)
+
+The string type variable is as the media of the asynchronous I/O. The header of each string represents different purpose of the commands:
 | Sent to Teensy 4.1  | Response from Teensy 4.1 |
 | ------------- | ------------- |
 | MT: update latest position commands  | JP: update encoder steps  |
