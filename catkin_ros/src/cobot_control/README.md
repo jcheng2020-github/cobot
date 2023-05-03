@@ -8,6 +8,7 @@
   ```
   roslaunch cobot_control move_group_demo.launch
   ```
+  The “move_group_demo” node also listens to the topic `/msgs_from_sensor_chessboard` for collision objects consideration function for end-effector trajectory calculation
 
 * **object retrieval with the computer vision function**  
   `move_group_demo_Object_retrieval.cpp` listens to topic `/tf` to get the target position detected by computer vision programs.
