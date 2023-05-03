@@ -5,3 +5,4 @@ An independent workspace “catkin_ros_chessboard” to reserve all Arduino Mega
 ![](chessboard_button.PNG)
 
 **The main part circuit and button part circuit of the chessboard are common ground.**
+The program always set Cobot as white player.
