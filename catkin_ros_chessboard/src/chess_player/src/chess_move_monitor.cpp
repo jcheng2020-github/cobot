@@ -57,9 +57,10 @@ void chatterCallback(const std_msgs::String::ConstPtr& msg)
 			broadcast = false;
 		}
 	}
-	if(iteration >= 9 )
-	{
+	
 	//evaluate
+	if(iteration >= 9)
+	{
 		for(int i = 0; i < ROW_NUMBER; i ++)
 		{
 			for(int j = 0; j < COLUMN_NUMBER; j ++)
@@ -87,6 +88,7 @@ void chatterCallback(const std_msgs::String::ConstPtr& msg)
 		}
 	}
 	
+	// display
 	if(iteration / 9 % 10 == 0 && iteration % 9 == 0)
 	{
 		std::cout << "iteration number: " << iteration << std::endl;
