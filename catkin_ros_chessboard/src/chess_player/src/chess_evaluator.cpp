@@ -64,6 +64,13 @@ void box::update(int x, int y, Change reading_change)
     replace(x,y,reading_change);
   }
   count ++;
+  
+  std::string output2="become_empty";
+  if(reading_change == become_occupied)
+    {
+    	output2 = "become_occupied";
+    }
+   evaluationLogUpadate( std::to_string(logCount) + " : " + coordinate2uciStep(x, y) + " : " +  output2 );
 }
 
 std::string box::coordinate2uciStep(int row_reading, int column_reading)
@@ -175,12 +182,7 @@ std::string box::evaluate()
         */
         
   }
-  std::string output2="become_empty";
-  if(change_content[2]== become_occupied)
-    {
-    	output2 = "become_occupied";
-    }
-  evaluationLogUpadate( std::to_string(logCount) + " : " + coordinate2uciStep(change[2][0], change[2][1]) + " : " +  output2 );
+  
   return result;
 }
 
