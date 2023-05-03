@@ -2,4 +2,4 @@ An independent workspace “catkin_ros_chessboard” to reserve all Arduino Mega
 ## The circuit diagram for sensor chessboard:
 ![](Sensor_Chessboard.png)
 ## The circuit diagram for sensor chessboard button part:
-![](chessboard_button.png)
+![](chessboard_button.PNG)
