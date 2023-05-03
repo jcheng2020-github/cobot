@@ -52,7 +52,7 @@ void box::replace(int x, int y, Change reading_change)
 
 void box::update(int x, int y, Change reading_change)
 {
-  if(count < maximum_changed_step_number)//if only read two changes
+  if(count < maximum_changed_step_number)//if only read three changes
   {
     change[count][0] = x;
     change[count][1] = y;
