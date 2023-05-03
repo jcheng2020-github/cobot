@@ -10,7 +10,7 @@ int main(int argc, char **argv)
 	ros::init(argc, argv, "fake_chess_monitor");
 	ros::NodeHandle n;
 	
-	ros::Publisher chatter_pub = n.advertise<std_msgs::String>("interpretation_of_sensor_chessboard", 1000);
+	ros::Publisher chatter_pub = n.advertise<std_msgs::String>("/instruction_from_chessEngine", 1000);
 	ros::Rate loop_rate(10);
 	
 	int count = 0;
