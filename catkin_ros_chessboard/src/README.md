@@ -4,5 +4,5 @@ An independent workspace “catkin_ros_chessboard” to reserve all Arduino Mega
 ## The circuit diagram for the sensor chessboard button part:
 ![](chessboard_button.PNG)
 
-**The main part circuit and button part circuit of the chessboard are common ground.**
+**The main part circuit and button part circuit of the chessboard are common ground.**<\br >
 The program always set Cobot as white player.
