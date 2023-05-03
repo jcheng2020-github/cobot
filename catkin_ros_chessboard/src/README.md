@@ -4,4 +4,4 @@ An independent workspace “catkin_ros_chessboard” to reserve all Arduino Mega
 ## The circuit diagram for sensor chessboard button part:
 ![](chessboard_button.PNG)
 
-**Main part circuit and button part circuit of the chessboard is common ground.**
+**Main part circuit and button part circuit of the chessboard are common ground.**
