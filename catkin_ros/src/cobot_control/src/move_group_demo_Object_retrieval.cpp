@@ -320,7 +320,7 @@ const double tau = 2 * M_PI;
 //object_x: [-0.4 , 0.4] object_y: [-0.55, -0.65]
 double object_x = -0.4, object_y = -0.65 , object_z = 0.046 ;
 double detected_x = -0.4, detected_y = -0.65 , detected_z = 0.046;
-double deviation_x = 0.010 ,deviation_y = -0.015, deviation_z = 0.068;
+double deviation_x = 0.030/*0.010*/ ,deviation_y = -0.015, deviation_z = 0.068;
 
 
 
@@ -346,7 +346,7 @@ void openGripper(trajectory_msgs::JointTrajectory& posture)
   posture.points[0].positions.resize(2);
   posture.points[0].positions[0] = 0.04;
   posture.points[0].positions[1] = 0.04;
-  posture.points[0].time_from_start = ros::Duration(0.5);
+  posture.points[0].time_from_start = ros::Duration(5/*0.5*/);
   // END_SUB_TUTORIAL
 }
 
@@ -363,7 +363,7 @@ void closedGripper(trajectory_msgs::JointTrajectory& posture)
   posture.points[0].positions.resize(2);
   posture.points[0].positions[0] = 0.010;
   posture.points[0].positions[1] = 0.010;
-  posture.points[0].time_from_start = ros::Duration(0.5);
+  posture.points[0].time_from_start = ros::Duration(5/*0.5*/);
   // END_SUB_TUTORIAL
 }
 
@@ -664,6 +664,8 @@ void manipulate()
   moveit::planning_interface::PlanningSceneInterface planning_scene_interface;
   moveit::planning_interface::MoveGroupInterface group("ar3");
   group.setPlanningTime(100.0);
+  group.setMaxVelocityScalingFactor(0.02);
+  group.setMaxAccelerationScalingFactor(0.02);
 
   addCollisionObjects(planning_scene_interface);
 
@@ -709,6 +711,7 @@ int main(int argc, char **argv)
 		if(secs - begin > 20)
 		{
 			ROS_INFO("void manipulate() begin");
+			
 			manipulate();
 			begin =ros::Time::now().toSec();
 		}
